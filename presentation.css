@@ -156,6 +156,33 @@ a { color: inherit; text-decoration: none; }
 .align-top { align-items: stretch; }
 .left-text, .left-text * { text-align: left; }
 
+/* 한국어 줄바꿈은 띄어쓰기 기준으로 보이도록 정리 */
+.slide-shell h1,
+.slide-shell h2,
+.slide-shell h3,
+.slide-shell p,
+.slide-shell li,
+.slide-shell strong,
+.slide-shell span,
+.slide-shell a,
+.slide-shell div {
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.section-head h2,
+.hero-title,
+.end-title,
+.quote-card strong,
+.panel-card h3,
+.table-row,
+.flow-box strong,
+.screen-card strong,
+.future-card,
+.link-card {
+  text-wrap: balance;
+}
+
 .section-head {
   display: flex;
   flex-direction: column;
